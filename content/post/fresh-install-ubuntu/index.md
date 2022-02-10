@@ -37,16 +37,22 @@ tags = [
 
 `usermod -aG sudo hophamlam`
 
-copy key
+## copy key
 
 `ssh-copy-id hophamlam@`
 
-log in as root from user
+## log in as root from user
 
 `sudo -i`
 
-disable log in as root from outside ssh
+## disable log in as root from outside ssh
 
 `sudo nano /etc/ssh/sshd_config`
 
 `sudo service ssh restart`
+
+## Install Docker and Docker Compose
+
+`curl -fsSL https://get.docker.com -o get-docker.sh`
+
+`sh get-docker.sh`
