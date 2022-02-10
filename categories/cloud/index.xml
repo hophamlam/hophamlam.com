@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cloud on hophamlam.com</title><link>https://hophamlam.com/categories/cloud/</link><description>Recent content in Cloud on hophamlam.com</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hophamlam.com/categories/cloud/index.xml" rel="self" type="application/rss+xml"/><item><title>Fresh Setup Ubuntu Server</title><link>https://hophamlam.com/p/fresh-setup-ubuntu-server/</link><pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate><guid>https://hophamlam.com/p/fresh-setup-ubuntu-server/</guid><description>Locate your public SSH key. ls ~/.ssh/id*
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cloud on hophamlam.com</title><link>https://hophamlam.com/categories/cloud/</link><description>Recent content in Cloud on hophamlam.com</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hophamlam.com/categories/cloud/index.xml" rel="self" type="application/rss+xml"/><item><title>Fresh Setup Ubuntu Server</title><link>https://hophamlam.com/p/fresh-setup-ubuntu-server/</link><pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate><guid>https://hophamlam.com/p/fresh-setup-ubuntu-server/</guid><description>Locate public SSH key ls ~/.ssh/id*
 ssh-copy-id
-login as root passwd
+Login as root passwd
 sudo apt-get update &amp;amp;&amp;amp; sudo apt-get -y upgrade
 sudo nano /etc/hosts
 When I run a sudo command it says unable to resolve host
@@ -8,6 +8,6 @@ sudo nano /etc/ssh/sshd_config
 sudo service ssh restart
 adduser hophamlam
 usermod -aG sudo hophamlam
-copy key ssh-copy-id hophamlam@
-log in as root from user sudo -i
-disable log in as root from outside ssh sudo nano /etc/ssh/sshd_config</description></item></channel></rss>
+Copy key -&amp;gt; Log in without password ssh-copy-id hophamlam@
+Log in as root from user sudo -i
+Disable log in as root from outside ssh sudo nano /etc/ssh/sshd_config</description></item></channel></rss>

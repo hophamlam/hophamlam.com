@@ -50,10 +50,10 @@ A Personal Guide for quick fresh Ubuntu server setup
 </div>
 </header>
 <section class=article-content>
-<h2 id=locate-your-publicsshkey>Locate your public <em>SSH</em> key.</h2>
+<h2 id=locate-publicsshkey>Locate public SSH key</h2>
 <p><code>ls ~/.ssh/id*</code></p>
 <p><code>ssh-copy-id</code></p>
-<h2 id=login-as-root>login as root</h2>
+<h2 id=login-as-root>Login as root</h2>
 <p><code>passwd</code></p>
 <p><code>sudo apt-get update && sudo apt-get -y upgrade</code></p>
 <p><code>sudo nano /etc/hosts</code></p>
@@ -62,15 +62,15 @@ A Personal Guide for quick fresh Ubuntu server setup
 <p><code>sudo service ssh restart</code></p>
 <p><code>adduser hophamlam</code></p>
 <p><code>usermod -aG sudo hophamlam</code></p>
-<h2 id=copy-key>copy key</h2>
+<h2 id=copy-key---log-in-without-password>Copy key -> Log in without password</h2>
 <p><code>ssh-copy-id hophamlam@</code></p>
-<h2 id=log-in-as-root-from-user>log in as root from user</h2>
+<h2 id=log-in-as-root-from-user>Log in as root from user</h2>
 <p><code>sudo -i</code></p>
-<h2 id=disable-log-in-as-root-from-outside-ssh>disable log in as root from outside ssh</h2>
+<h2 id=disable-log-in-as-root-from-outside-ssh>Disable log in as root from outside ssh</h2>
 <p><code>sudo nano /etc/ssh/sshd_config</code></p>
 <p><code>sudo service ssh restart</code></p>
 <h2 id=install-docker-and-docker-compose>Install Docker and Docker Compose</h2>
-<p><code>curl -fsSL https://get.docker.com -o get-docker.sh</code></p>
+<p><code>sudo wget https://gist.githubusercontent.com/wdullaer/f1af16bd7e970389bad3/raw/4a5a72aece57e1deca926894e5919f90350c706d/install.sh</code></p>
 <p><code>sh get-docker.sh</code></p>
 </section>
 <footer class=article-footer>
@@ -140,11 +140,11 @@ Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=
 <div class=widget--toc>
 <nav id=TableOfContents>
 <ol>
-<li><a href=#locate-your-publicsshkey>Locate your public <em>SSH</em> key.</a></li>
-<li><a href=#login-as-root>login as root</a></li>
-<li><a href=#copy-key>copy key</a></li>
-<li><a href=#log-in-as-root-from-user>log in as root from user</a></li>
-<li><a href=#disable-log-in-as-root-from-outside-ssh>disable log in as root from outside ssh</a></li>
+<li><a href=#locate-publicsshkey>Locate public SSH key</a></li>
+<li><a href=#login-as-root>Login as root</a></li>
+<li><a href=#copy-key---log-in-without-password>Copy key -> Log in without password</a></li>
+<li><a href=#log-in-as-root-from-user>Log in as root from user</a></li>
+<li><a href=#disable-log-in-as-root-from-outside-ssh>Disable log in as root from outside ssh</a></li>
 <li><a href=#install-docker-and-docker-compose>Install Docker and Docker Compose</a></li>
 </ol>
 </nav>
