@@ -18,6 +18,8 @@ tags = [
 
 `ls ~/.ssh/id*`
 
+`cat ~/.ssh/id_rsa.pub`
+
 `ssh-copy-id`
 
 ### Login as root
