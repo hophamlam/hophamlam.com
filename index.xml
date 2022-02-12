@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hophamlam.com</title><link>https://hophamlam.com/</link><description>Recent content on hophamlam.com</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hophamlam.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Fresh Setup Ubuntu Server</title><link>https://hophamlam.com/p/fresh-setup-ubuntu-server/</link><pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate><guid>https://hophamlam.com/p/fresh-setup-ubuntu-server/</guid><description>&lt;h2 id="passwordless-logging-in">Passwordless logging in&lt;/h2>
-&lt;h3 id="locate-publicsshkey">Locate public SSH key&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hophamlam.com</title><link>https://hophamlam.com/</link><description>Recent content on hophamlam.com</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hophamlam.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Fresh Setup Ubuntu Server</title><link>https://hophamlam.com/p/fresh-setup-ubuntu-server/</link><pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate><guid>https://hophamlam.com/p/fresh-setup-ubuntu-server/</guid><description>&lt;h1 id="passwordless-logging-in">Passwordless logging in&lt;/h1>
+&lt;h2 id="locate-publicsshkey">Locate public SSH key&lt;/h2>
 &lt;p>&lt;code>ls ~/.ssh/id*&lt;/code>&lt;/p>
 &lt;p>&lt;code>cat ~/.ssh/id_rsa.pub&lt;/code>&lt;/p>
 &lt;p>&lt;code>ssh-copy-id&lt;/code>&lt;/p>
-&lt;h3 id="login-as-root">Login as root&lt;/h3>
+&lt;h2 id="login-as-root">Login as root&lt;/h2>
 &lt;p>&lt;code>passwd&lt;/code>&lt;/p>
 &lt;p>&lt;code>sudo apt-get update &amp;amp;&amp;amp; sudo apt-get -y upgrade&lt;/code>&lt;/p>
 &lt;p>&lt;code>sudo nano /etc/hosts&lt;/code>&lt;/p>
@@ -13,14 +13,14 @@
 &lt;p>&lt;code>sudo service ssh restart&lt;/code>&lt;/p>
 &lt;p>&lt;code>adduser hophamlam&lt;/code>&lt;/p>
 &lt;p>&lt;code>usermod -aG sudo hophamlam&lt;/code>&lt;/p>
-&lt;h3 id="copy-key---log-in-without-password">Copy key -&amp;gt; Log in without password&lt;/h3>
+&lt;h2 id="copy-key---log-in-without-password">Copy key -&amp;gt; Log in without password&lt;/h2>
 &lt;p>&lt;code>ssh-copy-id hophamlam@&lt;/code>&lt;/p>
-&lt;h3 id="log-in-as-root-from-user">Log in as root from user&lt;/h3>
+&lt;h2 id="log-in-as-root-from-user">Log in as root from user&lt;/h2>
 &lt;p>&lt;code>sudo -i&lt;/code>&lt;/p>
-&lt;h3 id="disable-log-in-as-root-from-outside-ssh">Disable log in as root from outside ssh&lt;/h3>
+&lt;h2 id="disable-log-in-as-root-from-outside-ssh">Disable log in as root from outside ssh&lt;/h2>
 &lt;p>&lt;code>sudo nano /etc/ssh/sshd_config&lt;/code>&lt;/p>
 &lt;p>&lt;code>sudo service ssh restart&lt;/code>&lt;/p>
-&lt;h2 id="install-docker-and-docker-compose">Install Docker and Docker Compose&lt;/h2>
+&lt;h1 id="install-docker-and-docker-compose">Install Docker and Docker Compose&lt;/h1>
 &lt;p>&lt;code>sudo wget https://gist.githubusercontent.com/wdullaer/f1af16bd7e970389bad3/raw/4a5a72aece57e1deca926894e5919f90350c706d/install.sh&lt;/code>&lt;/p>
 &lt;p>&lt;code>sh install.sh&lt;/code>&lt;/p></description></item><item><title>Install Hugo Develop Invironments on Windows 10/11</title><link>https://hophamlam.com/p/install-hugo-develop-invironments-on-windows-10/11/</link><pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate><guid>https://hophamlam.com/p/install-hugo-develop-invironments-on-windows-10/11/</guid><description>&lt;p>&lt;a class="link" href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener"
 >Releases · gohugoio/hugo&lt;/a>&lt;/p>
