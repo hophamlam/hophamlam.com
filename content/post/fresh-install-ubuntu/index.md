@@ -2,7 +2,7 @@
 author = "hophamlam"
 title = "Fresh Setup Ubuntu Server"
 date = "2022-02-10"
-description = "A Personal Guide for quick fresh Ubuntu server setup"
+description = "A very personal guide for fresh Ubuntu server setup"
 categories = [
     "Cloud", "VPS"
 ]
@@ -12,50 +12,50 @@ tags = [
 
 +++
 
-## Passwordless logging in
+# Passwordless logging in
 
-### Locate public SSH key
+## Locate public SSH key
 
-`ls ~/.ssh/id*`
+```ls ~/.ssh/id*```
 
-`cat ~/.ssh/id_rsa.pub`
+```cat ~/.ssh/id_rsa.pub```
 
-`ssh-copy-id`
+```ssh-copy-id```
 
-### Login as root
+## Login as root
 
-`passwd` 
+```passwd```
 
-`sudo apt-get update && sudo apt-get -y upgrade`
+```sudo apt-get update && sudo apt-get -y upgrade```
 
-`sudo nano /etc/hosts`
+```sudo nano /etc/hosts```
 
 [When I run a sudo command it says unable to resolve host](https://askubuntu.com/questions/811098/when-i-run-a-sudo-command-it-says-unable-to-resolve-host)
 
-`sudo nano /etc/ssh/sshd_config`
+```sudo nano /etc/ssh/sshd_config```
 
-`sudo service ssh restart`
+```sudo service ssh restart```
 
-`adduser hophamlam`
+```adduser hophamlam```
 
 `usermod -aG sudo hophamlam`
 
-### Copy key -> Log in without password
+## Copy key -> Log in without password
 
-`ssh-copy-id hophamlam@`
+```ssh-copy-id hophamlam@```
 
-### Log in as root from user
+## Log in as root from user
 
-`sudo -i`
+```sudo -i```
 
-### Disable log in as root from outside ssh
+## Disable log in as root from outside ssh
 
-`sudo nano /etc/ssh/sshd_config`
+```sudo nano /etc/ssh/sshd_config```
 
-`sudo service ssh restart`
+```sudo service ssh restart```
 
-## Install Docker and Docker Compose
+# Install Docker and Docker Compose
 
-`sudo wget https://gist.githubusercontent.com/wdullaer/f1af16bd7e970389bad3/raw/4a5a72aece57e1deca926894e5919f90350c706d/install.sh`
+```sudo wget https://gist.githubusercontent.com/wdullaer/f1af16bd7e970389bad3/raw/4a5a72aece57e1deca926894e5919f90350c706d/install.sh```
 
-`sh install.sh`
+```sh install.sh```
