@@ -15,18 +15,6 @@ menu:
             icon: user
 ---
 
-Thông tin chuyển khoản:
+![](momo.jpg) 
 
-Chủ tài khoản: Hồ Phạm Lâm
-
-Vietcombank: 
-
-```html
-0071001027650
-```
-
-Momo: 
-
-```html
-0938568040
-```
+![](ck.png)
