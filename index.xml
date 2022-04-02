@@ -20,7 +20,7 @@
 &lt;h2 id="disable-log-in-as-root-from-outside-ssh">Disable log in as root from outside ssh&lt;/h2>
 &lt;p>&lt;code>sudo nano /etc/ssh/sshd_config&lt;/code>&lt;/p>
 &lt;p>&lt;code>sudo service ssh restart&lt;/code>&lt;/p>
-&lt;h2 id="heading">&lt;/h2>
+&lt;h2 id="remote-host-identification-has-changed">REMOTE HOST IDENTIFICATION HAS CHANGED&lt;/h2>
 &lt;p>&lt;code>sudo nano /path/to/your/known_hosts;&lt;/code>&lt;/p>
 &lt;p>Delete relevant line (in your example that would be line 3)&lt;/p>
 &lt;h1 id="install-docker-and-docker-compose">Install Docker and Docker Compose&lt;/h1>
