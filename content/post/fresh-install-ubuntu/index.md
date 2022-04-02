@@ -54,7 +54,7 @@ tags = [
 
 ```sudo service ssh restart```
 
-## 
+## REMOTE HOST IDENTIFICATION HAS CHANGED
 
 ```sudo nano /path/to/your/known_hosts;```
 
