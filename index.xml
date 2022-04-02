@@ -26,7 +26,21 @@
 &lt;h1 id="install-portainer">Install Portainer&lt;/h1>
 &lt;p>&lt;code>docker volume create portainer_data&lt;/code>&lt;/p>
 &lt;p>&lt;code>docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.11.1&lt;/code>&lt;/p>
-&lt;p>&lt;code>port 9443&lt;/code>&lt;/p></description></item><item><title>Install Hugo Develop Invironments on Windows 10/11</title><link>https://hophamlam.com/p/install-hugo-develop-invironments-on-windows-10/11/</link><pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate><guid>https://hophamlam.com/p/install-hugo-develop-invironments-on-windows-10/11/</guid><description>&lt;p>&lt;a class="link" href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener"
+&lt;p>&lt;code>port 9443&lt;/code>&lt;/p>
+&lt;h1 id="instal-proxy-manager">Instal Proxy Manager&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">version: &lt;span class="s1">&amp;#39;3&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">services:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> app:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> image: &lt;span class="s1">&amp;#39;jc21/nginx-proxy-manager:latest&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> restart: unless-stopped
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ports:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - &lt;span class="s1">&amp;#39;80:80&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - &lt;span class="s1">&amp;#39;81:81&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - &lt;span class="s1">&amp;#39;443:443&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> volumes:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - ./data:/data
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - ./letsencrypt:/etc/letsencrypt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Install Hugo Develop Invironments on Windows 10/11</title><link>https://hophamlam.com/p/install-hugo-develop-invironments-on-windows-10/11/</link><pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate><guid>https://hophamlam.com/p/install-hugo-develop-invironments-on-windows-10/11/</guid><description>&lt;p>&lt;a class="link" href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener"
 >Releases · gohugoio/hugo&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=C04dlR1Ufj4&amp;amp;t=391s" target="_blank" rel="noopener"
 >How to install Hugo on Windows? (2020)&lt;/a>&lt;/p>
