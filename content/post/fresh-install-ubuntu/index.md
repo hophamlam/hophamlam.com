@@ -54,6 +54,12 @@ tags = [
 
 ```sudo service ssh restart```
 
+## 
+
+```sudo nano /path/to/your/known_hosts;```
+
+Delete relevant line (in your example that would be line 3)
+
 # Install Docker and Docker Compose
 
 ```sudo wget https://gist.githubusercontent.com/wdullaer/f1af16bd7e970389bad3/raw/4a5a72aece57e1deca926894e5919f90350c706d/install.sh```
