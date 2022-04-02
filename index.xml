@@ -23,7 +23,10 @@
 &lt;h1 id="install-docker-and-docker-compose">Install Docker and Docker Compose&lt;/h1>
 &lt;p>&lt;code>sudo wget https://gist.githubusercontent.com/wdullaer/f1af16bd7e970389bad3/raw/4a5a72aece57e1deca926894e5919f90350c706d/install.sh&lt;/code>&lt;/p>
 &lt;p>&lt;code>sh install.sh&lt;/code>&lt;/p>
-&lt;h1 id="test">test&lt;/h1></description></item><item><title>Install Hugo Develop Invironments on Windows 10/11</title><link>https://hophamlam.com/p/install-hugo-develop-invironments-on-windows-10/11/</link><pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate><guid>https://hophamlam.com/p/install-hugo-develop-invironments-on-windows-10/11/</guid><description>&lt;p>&lt;a class="link" href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener"
+&lt;h1 id="install-portainer">Install Portainer&lt;/h1>
+&lt;p>&lt;code>docker volume create portainer_data&lt;/code>&lt;/p>
+&lt;p>&lt;code>docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.11.1&lt;/code>&lt;/p>
+&lt;p>&lt;code>port 9443&lt;/code>&lt;/p></description></item><item><title>Install Hugo Develop Invironments on Windows 10/11</title><link>https://hophamlam.com/p/install-hugo-develop-invironments-on-windows-10/11/</link><pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate><guid>https://hophamlam.com/p/install-hugo-develop-invironments-on-windows-10/11/</guid><description>&lt;p>&lt;a class="link" href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener"
 >Releases · gohugoio/hugo&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=C04dlR1Ufj4&amp;amp;t=391s" target="_blank" rel="noopener"
 >How to install Hugo on Windows? (2020)&lt;/a>&lt;/p>
